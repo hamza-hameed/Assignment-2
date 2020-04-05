@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:paddingBottom="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="55dp"
+                android:background="@drawable/ic_chevron_left_black_24dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="89dp"
+                android:layout_height="89dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/user_in_circle" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:srcCompat="@drawable/camera_in_circle" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="15dp"
+                android:text="Upload Cover Picture"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+            app:layout_constraintVertical_bias="0.875">
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/editText8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editText6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="User Name"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/editText5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/editText9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Day"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/editText11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Month"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toStartOf="@+id/editText13"
+                app:layout_constraintStart_toEndOf="@+id/editText12"
+                app:layout_constraintTop_toTopOf="@+id/editText12" />
+
+            <EditText
+                android:id="@+id/editText13"
+                android:layout_width="0dp"
+                android:layout_height="57dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:hint="Year"
+                android:inputType="textPersonName"
+                android:paddingStart="15dp"
+                android:paddingEnd="5dp"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/editText11"
+                app:layout_constraintTop_toTopOf="@+id/editText11" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_bg"
+                android:text="Get Started"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.526"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="9dp"
+                android:gravity="center"
+                android:text="Terms and Condition"
+                android:textColor="#2196F3"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
